@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+    <title>Cadastro</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="shortcut icon" type="imagex/jpg" href="./FinanPibs.jpg">
+
+    <style>
+        body {
+            display: flexbox;
+            background-color: bisque;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 90px;
+            font-size: 80px;
+            color: #C46634;
+            font-family: 'Poppins';
+            margin-top: 100px;
+            line-height: 10px;
+        }
+
+        div {
+            text-align: center;
+            vertical-align: text-top;
+            transform: translateY(170%);
+            color: black;
+            margin-top: 80px;
+        }
+
+        div input {
+            border: solid 2px #C46634;
+            border-radius: 10px;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            font-family: 'Poppins';
+            background-color: bisque;
+        }
+
+        div input::placeholder {
+            color: #C46634;
+        }
+
+        .button {
+            margin-top: 20px;
+        }
+
+        .button button {
+            color: white;
+            border: transparent;
+            background-color: #C46634;
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+            font-family: 'Poppins';
+            font-size: 20px;
+            transition: all 1.5s;
+        }
+
+        .button button:hover {
+            color: white;
+            border: transparent;
+            background-color: #C46634;
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            font-family: 'Poppins';
+            font-size: 20px;
+            transition: all 1.5s;
+        }
+
+        .subtitle {
+            font-family: 'Poppins';
+            font-size: 15px;
+            text-align: center;
+            color: #C46634;
+            opacity: 0.7;
+        }
+
+        .button .cancelar {
+            background-color: white;
+            color: #C46634;
+        }
+
+        @media screen and (max-width: 600px){
+            .title {
+                text-align: center;
+                font-size: 60px;
+                color: #C46634;
+                font-family: 'Poppins';
+            }
+
+            div {
+                display: flexbox;
+                flex-direction: column;
+                text-align: center;
+                vertical-align: text-top;
+                transform: translateY(150%);
+                color: black;
+                margin-top: -400px;
+                line-height: 50px;
+            }
+
+            .button {
+                margin-top: 300px;
+            }
+
+            .button .celularDiv {
+                width: 420px;
+            }
+
+            div input {
+                border: solid 2px #C46634;
+                border-radius: 10px;
+                width: 200px;
+                height: 30px;
+                text-align: center;
+                font-family: 'Poppins';
+                background-color: bisque;
+            }
+
+            .button button {
+                color: white;
+                border: transparent;
+                background-color: #C46634;
+                width: 100%;
+                height: 50px;
+                border-radius: 10px;
+                font-family: 'Poppins';
+                font-size: 20px;
+                transition: all 1.5s;
+            }
+
+            .button button:hover {
+                color: white;
+                border: transparent;
+                background-color: #C46634;
+                width: 200px;
+                height: 50px;
+                border-radius: 10px;
+                font-family: 'Poppins';
+                font-size: 20px;
+                transition: all 1.5s;
+            }
+
+            .subtitle {
+                font-family: 'Poppins';
+                font-size: 15px;
+                text-align: center;
+                color: #C46634;
+                opacity: 0.7;
+            }
+
+            .button .cancelar {
+                background-color: white;
+                color: #C46634;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h6 style="font-family: 'Poppins'; text-align: center; color: #C46634;">"Fortalecendo laços e construindo o futuro desde 1911: nosso compromisso é ser o alicerce seguro para os seus sonhos."</h6>
+    <h1 class="title">FinanPibs</h1>
+    <h6 class="subtitle">Cadastro</h6>
+    <h1 style="color: bisque;">-------------------</h1>
+    <div>
+        <input type="text" placeholder="CPF">
+        <input type="text" placeholder="Nome completo">
+        <input type="text" placeholder="Celular" class="celularDiv">
+        <input type="text" placeholder="E-mail">
+        <input type="text" placeholder="Confirmação de e-mail">
+    </div>
+    <div class="button">
+        <button onclick="window.location.href = 'contaCriada.html'">Confirmar</button>
+        <p><button class="cancelar" onclick="window.location.href = 'index.html'" style="background-color: bisque; border: solid #C46634 2px;">Cancelar</button></p>
+    </div>
+</body>
+</html>
